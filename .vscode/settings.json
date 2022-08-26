@@ -1,0 +1,18 @@
+{
+    "Lua.diagnostics.disable": [
+        "lowercase-global",
+        "redundant-parameter",
+        "unbalanced-assignments"
+    ],
+    "Lua.runtime.version": "LuaJIT",
+    "Lua.workspace.library": [
+        "${3rd}/love2d/library"
+    ],
+    "Lua.workspace.checkThirdParty": false,
+    "Lua.hint.await": false,
+    "Lua.workspace.ignoreDir": [
+        ".vscode",
+        "bin",
+    ],
+    "glsllint.glslangValidatorArgs": "--glsl-version 120"
+}
