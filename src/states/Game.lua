@@ -11,8 +11,8 @@ local Body = require "entities.body"
 function Game:enter(from, ...)
     world = Bump.newWorld(32)
 
-    EM.add(Player(world, Vector2(200, 250)))
-    EM.add(Body(world, Vector2(50, 200), Vector2(150, 32)))
+    EM.add(Player(world, Vector2(150, 250)))
+    EM.add(Body(world, Vector2(50, 300), Vector2(150, 32)))
 end
 
 function Game:draw()

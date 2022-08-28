@@ -29,12 +29,13 @@ Utils = require "engine.utils"
 local InputHelper = require "engine.inputHelper"
 local TransitionManager = require "engine.transitionManager"
 
-local Game = require "states.Game3d"
-local Splash = require "states.Splash2"
+local Game = require "states.Game"
 
 function love.load(args)
     InputHelper.registerAxis("horizontal", {"a", "left"}, {"d", "right"})
-    InputHelper.registerAxis("vertical", {"w", "up"}, {"s", "down"})
+    InputHelper.registerAxis("vertical",   {"w", "up"  }, {"s", "down" })
+
+    InputHelper.registerAction("jump", {"space", "up", "w"})
 
     GS.registerEvents({"update", "mousepressed", "mousereleased", "mousemoved", "keypressed", "keyreleased"})
     GS.switch(Game)

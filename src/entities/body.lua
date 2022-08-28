@@ -14,6 +14,7 @@ end
 function Body:draw()
     lg.setColor(1,1,1,1)
     lg.rectangle("fill", self.world:getRect(self))
+    lg.print(self.position.x, 0, 100)
 end
 
 function Body:moveTo(target, filter)
